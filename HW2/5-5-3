@@ -1,5 +1,5 @@
 // (3) eventListener에 의한 클로저의 메모리 해제
-(function() {
+var outer = (function() {
   var count = 0;
   var button = document.createElement('button');
   button.innerText = 'click';

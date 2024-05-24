@@ -1,5 +1,5 @@
 // (2) setInterval에 의한 클로저의 메모리 해제
-(function() {
+var outer = (function() {
   var a = 0;
   var intervalId = null;
   var inner = function() {
